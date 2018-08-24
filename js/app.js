@@ -2,12 +2,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('#new-item-form');
   form.addEventListener('submit', handleFormSubmit);
 
+  const deleteAllButton = document.querySelector('#delete-all');
+  deleteAllButton.addEventListener('click', handleDeleteAllButton)
+
   renderList();
 });
 
 const handleFormSubmit = function(event){
   event.preventDefault();
   animalList = getList();
+  // console.log(animalList);
 
   const newAnimal = {
     name: event.target.name.value,
@@ -54,4 +58,16 @@ const renderList = function(){
     animalUL = buildList(animal);
     animalListDiv.appendChild(animalUL);
   });
+}
+
+const handleDeleteAllButton = function(){
+
+  var animalList = document.getElementById("animals-list");
+
+  while (animalList.children.length > 0) {
+    animalList.removeChild(animalList.lastChild);
+  }
+
+  localStorage.clear();
+
 }

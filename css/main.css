@@ -1,0 +1,18 @@
+.grid {
+  padding:10px;
+  /*border: 1px solid hotpink;
+  border-radius: 20px;*/
+}
+
+.grid-row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid darkslategray;
+  text-align: center;
+  border-radius: 20px;
+}
