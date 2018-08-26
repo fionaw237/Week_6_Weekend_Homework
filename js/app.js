@@ -62,12 +62,16 @@ const renderList = function(){
 
 const handleDeleteAllButton = function(){
 
-  var animalList = document.getElementById("animals-list");
+  var result = confirm("Are you sure you want to delete all items?");
 
-  while (animalList.children.length > 0) {
-    animalList.removeChild(animalList.lastChild);
+  if (result){
+    var animalList = document.getElementById("animals-list");
+
+    while (animalList.children.length > 0) {
+      animalList.removeChild(animalList.lastChild);
+    }
+
+    localStorage.clear();
   }
-
-  localStorage.clear();
 
 }

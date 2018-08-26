@@ -1,7 +1,11 @@
-.grid {
+body {
   padding:10px;
-  /*border: 1px solid hotpink;
-  border-radius: 20px;*/
+  margin: 50px;
+  border: 1px solid darkslategray;
+  border-radius: 40px;
+  background-color: lightgray;
+  font-family: Helvetica;
+  color: darkslategray;
 }
 
 .grid-row {
@@ -12,7 +16,42 @@
   flex: 1;
   padding: 10px;
   margin: 10px;
-  border: 1px solid darkslategray;
   text-align: center;
-  border-radius: 20px;
+  /*border-radius: 10px;*/
+}
+
+li {
+  text-align: center;
+  width: 200px;
+}
+
+.primary {
+  width: 65px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 5px;
+  padding: 6px;
+}
+
+#name {
+  width: 150px;
+}
+
+#species {
+  width: 150px;
+}
+
+#continent {
+  width: 155px;
+}
+
+#form-cell {
+  border-right: 1px dashed darkslategray;
+  padding: 50px;
+  padding-top: 70px;
+}
+
+#delete-all {
+  color: red;
+  text-transform: uppercase;
 }
