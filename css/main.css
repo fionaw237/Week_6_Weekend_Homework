@@ -1,11 +1,27 @@
-body {
+html {
+  /*background-image: linear-gradient(to right, green, blue);*/
+  /*background: paleturquoise;*/
+  background: lightsteelblue;
+  font-family: Helvetica;
+}
+
+#main-heading {
+  color: midnightblue;
+  text-align: center;
+  font-size: 30pt;
+  text-transform: uppercase;
+}
+
+.inside-body {
   padding:10px;
   margin: 50px;
-  border: 1px solid darkslategray;
+  border: 2px solid midnightblue;
   border-radius: 40px;
-  background-color: lightgray;
+  background-color: lightblue;
+  /*background-color: lightsteelblue*/
   font-family: Helvetica;
-  color: darkslategray;
+  color: midnightblue;
+  /*height: 70vh;*/
 }
 
 .grid-row {
@@ -21,8 +37,13 @@ body {
 }
 
 li {
-  text-align: center;
+  text-align: left;
   width: 200px;
+}
+
+ul {
+  display: inline-block;
+  align-items: center;
 }
 
 .primary {
@@ -46,12 +67,24 @@ li {
 }
 
 #form-cell {
-  border-right: 1px dashed darkslategray;
+  border-right: 2px dashed midnightblue;
   padding: 50px;
   padding-top: 70px;
+  /*height: 48vh;*/
 }
 
 #delete-all {
-  color: red;
+  background: red;
+  color: white;
   text-transform: uppercase;
+  border: 1px solid midnightblue;
+  font-size: 10pt;
+}
+
+#save-btn {
+  text-transform: uppercase;
+  background: green;
+  color: white;
+  border: 1px solid midnightblue;
+  font-size: 10pt;
 }

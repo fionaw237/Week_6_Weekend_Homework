@@ -7,48 +7,52 @@
     <script src="js/app.js"></script>
   </head>
   <body>
-    <div class="grid">
-      <div class="grid-row">
+    <h1 id="main-heading">Endangered Animals</h1>
+    <div class = "inside-body">
+      <div class="grid">
+        <div class="grid-row">
 
-        <div class="cell" id="form-cell">
+          <div class="cell" id="form-cell">
+            <!-- <h1>Add New Item</h1> -->
 
-          <form id="new-item-form">
-            <div id="form-wrapper">
-              <div class="form-item">
-                <label for="name" class="primary">Name</label>
-                <input type="text" id="name" required/>
+            <form id="new-item-form">
+              <div id="form-wrapper">
+                <div class="form-item">
+                  <label for="name" class="primary">Name</label>
+                  <input type="text" id="name" required/>
+                </div>
+
+                <div class="form-item">
+                  <label for="species" class="primary">Species</label>
+                  <input type="text" id="species" required/>
+                </div>
+
+                <div class="form-item">
+                  <label for="continent" class="primary">Continent</label>
+                  <select id="continent">
+                    <option value="" disabled selected></option>
+                    <option value="Africa">Africa</option>
+                    <option value="Antarctica">Antarctica</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Europe">Europe</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
+                  </select>
+                </div>
               </div>
+              <input id="save-btn" type="submit" value="add new item"/>
+            </form>
 
-              <div class="form-item">
-                <label for="species" class="primary">Species</label>
-                <input type="text" id="species" required/>
-              </div>
+          </div>
 
-              <div class="form-item">
-                <label for="continent" class="primary">Continent</label>
-                <select id="continent">
-                  <option value="" disabled selected></option>
-                  <option value="Africa">Africa</option>
-                  <option value="Antarctica">Antarctica</option>
-                  <option value="Asia">Asia</option>
-                  <option value="Australia">Australia</option>
-                  <option value="Europe">Europe</option>
-                  <option value="North America">North America</option>
-                  <option value="South America">South America</option>
-                </select>
-              </div>
+          <div class="cell">
+            <h2>List</h2>
+            <div id="animals-list"></div>
+
+            <div class="delete-wrapper">
+              <input id="delete-all" type="submit" value="Delete All"/>
             </div>
-            <input type="submit" value="save"/>
-          </form>
-
-        </div>
-
-        <div class="cell">
-          <h1>List of Endangered Animals</h1>
-          <div id="animals-list"></div>
-
-          <div class="delete-wrapper">
-            <input id="delete-all" type="submit" value="Delete All"/>
           </div>
         </div>
       </div>
