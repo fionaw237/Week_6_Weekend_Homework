@@ -25,7 +25,8 @@ hr {
   margin: 50px;
   border: 4px solid black;
   border-radius: 40px;
-  background-color: palegoldenrod;
+  background-color: gainsboro;
+  /*background-color: palegoldenrod;*/
   /*background-color: lightsteelblue*/
   font-family: Helvetica;
   color: black;
@@ -45,8 +46,9 @@ hr {
 }
 
 li {
+  display: inline-block;
   text-align: left;
-  width: 200px;
+  /*width: 200px;*/
 }
 
 ul {
@@ -95,4 +97,29 @@ ul {
   color: white;
   border: 1px solid black;
   font-size: 10pt;
+  margin: 8px;
+}
+
+#animals-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+  /*background-color: lightgray;*/
+  /*align-content: center;*/
+  margin-bottom: 10px;
+}
+
+#animals-table thead {
+  border-bottom: 1px solid black;
+  background-color: antiquewhite;
+}
+
+th {
+  padding: 8px;
+}
+
+td {
+  padding: 5px;
+  background-color: oldlace;
 }
